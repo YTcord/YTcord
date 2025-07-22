@@ -25,9 +25,11 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 video_cooldown = commands.CooldownMapping.from_cooldown(1, 120, commands.BucketType.user)
 
-GITHUB_REPO = "YTcord/YTcord"
+# --- UPDATED GITHUB REPO ---
+GITHUB_REPO = "YTcord/YTcord-logs"
 GITHUB_FILE_PATH = "logs.json"
 GITHUB_API_URL = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE_PATH}"
+# ---------------------------
 
 def compress_video(input_path: str, output_path: str, target_size=MAX_FILE_SIZE):
     result = subprocess.run(
